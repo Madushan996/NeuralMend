@@ -29,7 +29,7 @@ mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => 
   const ctx = canvas.getContext('2d');
 
   let W, H, particles = [];
-  const GOLD = '158,124,42';
+  const GOLD = '46,196,182';
   const COUNT = 60;
 
   function resize() {
@@ -149,7 +149,7 @@ if (form) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         navLinks.forEach(a => {
-          a.style.color = a.getAttribute('href') === `#${entry.target.id}` ? '#E8C97A' : '';
+          a.style.color = a.getAttribute('href') === `#${entry.target.id}` ? '#2EC4B6' : '';
         });
       }
     });
