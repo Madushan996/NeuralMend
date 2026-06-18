@@ -214,7 +214,7 @@
             <div class="contact-details">
               <div class="contact-item">
                 <span class="contact-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg></span>
-                <a href="mailto:contact.neuralmend@gmail.com">contact.neuralmend@gmail.com</a>
+                <a href="mailto:neuralmend@gmail.com">neuralmend@gmail.com</a>
               </div>
               <div class="contact-item">
                 <span class="contact-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg></span>
@@ -223,20 +223,26 @@
             </div>
           </div>
           <form class="contact-form" id="contactForm">
+            <!-- Web3Forms: replace the access_key value with your own key from https://web3forms.com -->
+            <input type="hidden" name="access_key" value="2c28095f-e34c-4f85-8461-88050f30caa6" />
+            <input type="hidden" name="subject" value="New enquiry from neuralMend website" />
+            <input type="hidden" name="from_name" value="neuralMend Website" />
+            <!-- Honeypot spam trap (leave empty) -->
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
             <div class="form-row">
-              <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" placeholder="John Doe" required /></div>
-              <div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="john@company.com" required /></div>
+              <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" name="name" placeholder="John Doe" required /></div>
+              <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="john@company.com" required /></div>
             </div>
-            <div class="form-group"><label for="company">Company</label><input type="text" id="company" placeholder="Your Company" /></div>
+            <div class="form-group"><label for="company">Company</label><input type="text" id="company" name="company" placeholder="Your Company" /></div>
             <div class="form-group">
               <label for="service">Service of interest</label>
-              <input list="services-list" id="service" placeholder="Choose or type a service" />
+              <input list="services-list" id="service" name="service" placeholder="Choose or type a service" />
               <datalist id="services-list">
                 <option value="Business Process Automation &amp; AI Consultation"></option>
                 <option value="Creative Productions"></option>
               </datalist>
             </div>
-            <div class="form-group"><label for="message">Tell us about your project</label><textarea id="message" rows="4" placeholder="Describe your goals or challenges..." required></textarea></div>
+            <div class="form-group"><label for="message">Tell us about your project</label><textarea id="message" name="message" rows="4" placeholder="Describe your goals or challenges..." required></textarea></div>
             <button type="submit" class="btn-primary btn-full"><span>Send Message</span>
               <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/></svg>
             </button>
@@ -264,7 +270,7 @@
           <a href="index.html#process">Our Process</a>
           <a href="index.html#results">Results</a>
           <a href="index.html#contact">Contact</a>
-          <a href="mailto:contact.neuralmend@gmail.com">contact.neuralmend@gmail.com</a>
+          <a href="mailto:neuralmend@gmail.com">neuralmend@gmail.com</a>
         </div>
       </div>
       <div class="footer-bottom">

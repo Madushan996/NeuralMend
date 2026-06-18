@@ -109,24 +109,42 @@ if (hamburger) {
   targets.forEach(el => observer.observe(el));
 })();
 
-/* ─── CONTACT FORM ─── */
+/* ─── CONTACT FORM (Web3Forms) ─── */
 const form = document.getElementById('contactForm');
 if (form) {
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
+    const span = btn.querySelector('span');
+    const original = span.textContent;
     btn.disabled = true;
-    btn.querySelector('span').textContent = 'Sending…';
-    setTimeout(() => {
-      form.innerHTML = `
-        <div class="form-success show">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-          </svg>
-          <h3>Message Received!</h3>
-          <p>Thanks for reaching out — we'll be in touch within 24 hours.</p>
-        </div>`;
-    }, 1200);
+    span.textContent = 'Sending…';
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      });
+      const data = await res.json();
+      if (data.success) {
+        form.innerHTML = `
+          <div class="form-success show">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <h3>Message Received!</h3>
+            <p>Thanks for reaching out — we'll be in touch within 24 hours.</p>
+          </div>`;
+      } else {
+        throw new Error(data.message || 'Submission failed');
+      }
+    } catch (err) {
+      btn.disabled = false;
+      span.textContent = original;
+      alert('Sorry, your message could not be sent. Please email us directly at neuralmend@gmail.com.');
+      console.error('Web3Forms error:', err);
+    }
   });
 }
 
