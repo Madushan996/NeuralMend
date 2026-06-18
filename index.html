@@ -3,30 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>neuralMend — Business Automation Agency</title>
+  <title>neuralMend — AI Solutions for Forward-Thinking Businesses</title>
+  <meta name="description" content="neuralMend builds premium AI solutions — process automation, creative production, consultation, and custom model training & development." />
+  <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="page-bg"></div>
 
   <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
-      <a href="#" class="nav-logo-link">
-        <img src="logo.png" alt="NeuralMend" class="nav-logo-img" />
+      <a href="index.html" class="nav-logo-link">
+        <img src="logo-mark.png" alt="neuralMend" class="nav-logo-img" />
       </a>
       <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#how">Process</a></li>
-        <li><a href="#stack">Stack</a></li>
+        <li>
+          <a href="#services">Services
+            <svg class="chev" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+          </a>
+          <div class="nav-dropdown">
+            <a href="service-automation.html">
+              <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></span>
+              <span class="dd-text"><strong>Business Process Automation</strong><span>Automate operations with AI</span></span>
+            </a>
+            <a href="service-creative.html">
+              <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 8h.01M3 6a2 2 0 012-2h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V6z"/><path d="m3 16 5-5c.93-.93 2.07-.93 3 0l5 5"/><path d="m14 14 1-1c.93-.93 2.07-.93 3 0l3 3"/></svg></span>
+              <span class="dd-text"><strong>Creative Productions</strong><span>AI marketing content</span></span>
+            </a>
+            <a href="service-consultation.html">
+              <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+              <span class="dd-text"><strong>AI Consultation</strong><span>Strategy & roadmapping</span></span>
+            </a>
+            <a href="service-model-training.html">
+              <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.2 4.2l2.8 2.8M17 17l2.8 2.8M1 12h4M19 12h4M4.2 19.8 7 17M17 7l2.8-2.8"/></svg></span>
+              <span class="dd-text"><strong>Custom Model Training</strong><span>Models for your business</span></span>
+            </a>
+            <a href="service-development.html">
+              <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></span>
+              <span class="dd-text"><strong>Custom AI Development</strong><span>Training, finetuning & more</span></span>
+            </a>
+          </div>
+        </li>
+        <li><a href="#process">Process</a></li>
         <li><a href="#results">Results</a></li>
-        <li><a href="#contact" class="nav-cta">Get Started</a></li>
+        <li><a href="#contact" class="nav-cta">Get Started
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+        </a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
@@ -34,255 +62,162 @@
   <section class="hero" id="hero">
     <div class="hero-bg">
       <canvas id="particleCanvas"></canvas>
-      <div class="hero-gradient"></div>
     </div>
     <div class="hero-content">
-      <div class="hero-badge">Business Automation Agency</div>
+      <div class="hero-badge">AI Solutions Studio</div>
       <h1 class="hero-title">
-        Automate the <br />
-        <span class="gradient-text">Repetitive.</span><br />
-        Scale the <span class="gradient-text">Exceptional.</span>
+        Intelligent Systems for the<br />
+        <span class="gradient-text">Businesses of Tomorrow.</span>
       </h1>
       <p class="hero-sub">
-        We architect intelligent automation systems that eliminate manual work,
-        unify your tools, and let your team focus on what moves the needle.
+        From process automation to custom model development, neuralMend designs and
+        builds premium AI solutions that turn ambition into measurable advantage.
       </p>
       <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Start Automating</a>
-        <a href="#services" class="btn-ghost">Explore Services</a>
+        <a href="#services" class="btn-primary">Explore Services
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+        </a>
+        <a href="#contact" class="btn-ghost">Book a Consultation</a>
       </div>
       <div class="hero-metrics">
-        <div class="metric"><span class="metric-num">10×</span><span class="metric-label">Faster Workflows</span></div>
+        <div class="metric"><span class="metric-num">5</span><span class="metric-label">Core AI Services</span></div>
         <div class="metric-divider"></div>
-        <div class="metric"><span class="metric-num">80%</span><span class="metric-label">Time Saved</span></div>
+        <div class="metric"><span class="metric-num">10×</span><span class="metric-label">Faster Output</span></div>
         <div class="metric-divider"></div>
-        <div class="metric"><span class="metric-num">100+</span><span class="metric-label">Integrations</span></div>
+        <div class="metric"><span class="metric-num">24/7</span><span class="metric-label">Always-On Systems</span></div>
       </div>
     </div>
-    <div class="scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
+    <div class="scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
   </section>
 
   <!-- SERVICES -->
   <section class="section" id="services">
     <div class="container">
       <div class="section-header">
-        <div class="tag">What We Build</div>
-        <h2>Automation That <span class="gradient-text">Works While You Sleep</span></h2>
-        <p>From simple task automations to complex multi-system orchestrations — we design, build, and maintain it all.</p>
+        <div class="tag">What We Do</div>
+        <h2>Five Ways We Put <span class="gradient-text">AI to Work</span></h2>
+        <p>Each service is a dedicated practice — explore the one that fits where your business is headed.</p>
       </div>
       <div class="services-grid">
-        <div class="service-card featured">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-          </div>
-          <h3>Workflow Automation</h3>
-          <p>Design and deploy n8n workflows that connect your CRM, email, spreadsheets, databases, and more — automatically.</p>
+        <a href="service-automation.html" class="service-card">
+          <div class="service-badge">Most Popular</div>
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+          <h3>Business Process Automation</h3>
+          <p>Eliminate repetitive manual work with intelligent automation that connects your tools and runs around the clock.</p>
           <ul class="service-list">
-            <li>Multi-step process automation</li>
-            <li>Error handling & monitoring</li>
-            <li>Real-time & scheduled triggers</li>
+            <li>AI-driven workflow orchestration</li>
+            <li>Document & data processing</li>
+            <li>Smart decision routing</li>
           </ul>
-          <div class="service-tag">Most Popular</div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-          </div>
-          <h3>AI-Powered Pipelines</h3>
-          <p>Integrate LLMs into your workflows for intelligent document processing, auto-responses, and decision automation.</p>
+          <span class="service-link">Explore service
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </span>
+        </a>
+        <a href="service-creative.html" class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 8h.01M3 6a2 2 0 012-2h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V6z"/><path d="m3 16 5-5c.93-.93 2.07-.93 3 0l5 5"/><path d="m14 14 1-1c.93-.93 2.07-.93 3 0l3 3"/></svg></div>
+          <h3>Creative Productions</h3>
+          <p>AI-crafted marketing content — videos, visuals, copy and campaigns that look premium and ship at scale.</p>
           <ul class="service-list">
-            <li>GPT/Claude integration</li>
-            <li>Document parsing & extraction</li>
-            <li>Smart routing logic</li>
+            <li>AI marketing & ad content</li>
+            <li>Branded video & motion</li>
+            <li>On-brand copy at scale</li>
           </ul>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-          </div>
-          <h3>Dashboard & Reporting</h3>
-          <p>Automated data aggregation and live dashboards so you always have a pulse on your business without lifting a finger.</p>
+          <span class="service-link">Explore service
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </span>
+        </a>
+        <a href="service-consultation.html" class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>AI Consultation</h3>
+          <p>Strategic guidance to identify where AI delivers the highest ROI — and a clear roadmap to get there.</p>
           <ul class="service-list">
-            <li>Automated data sync</li>
-            <li>Custom KPI dashboards</li>
-            <li>Scheduled reports</li>
+            <li>AI opportunity assessment</li>
+            <li>Roadmap & feasibility</li>
+            <li>Tooling & vendor strategy</li>
           </ul>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3>CRM & Lead Automation</h3>
-          <p>Capture, qualify, and nurture leads automatically. From form fill to follow-up — your sales funnel runs itself.</p>
+          <span class="service-link">Explore service
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </span>
+        </a>
+        <a href="service-model-training.html" class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.2 4.2l2.8 2.8M17 17l2.8 2.8M1 12h4M19 12h4M4.2 19.8 7 17M17 7l2.8-2.8"/></svg></div>
+          <h3>Custom Model Training</h3>
+          <p>Models trained on your data, your domain and your goals — purpose-built for the way your business actually works.</p>
           <ul class="service-list">
-            <li>Lead capture & scoring</li>
-            <li>Automated follow-up sequences</li>
-            <li>CRM data sync</li>
+            <li>Domain-specific training</li>
+            <li>Proprietary data pipelines</li>
+            <li>Private & secure deployment</li>
           </ul>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
-          </div>
-          <h3>System Integration</h3>
-          <p>Break down data silos. We connect your disparate tools into a unified, synchronized ecosystem.</p>
+          <span class="service-link">Explore service
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </span>
+        </a>
+        <a href="service-development.html" class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></div>
+          <h3>Custom AI Development</h3>
+          <p>End-to-end engineering — model training, finetuning and integration of bespoke AI into your products.</p>
           <ul class="service-list">
-            <li>API integration & webhooks</li>
-            <li>Two-way data sync</li>
-            <li>Legacy system bridges</li>
+            <li>Model training & finetuning</li>
+            <li>RAG & agentic systems</li>
+            <li>Production-grade APIs</li>
           </ul>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h3>Maintenance & Support</h3>
-          <p>Your automations stay live and healthy. We monitor, update, and evolve your workflows as your business grows.</p>
-          <ul class="service-list">
-            <li>24/7 uptime monitoring</li>
-            <li>Proactive maintenance</li>
-            <li>On-demand modifications</li>
-          </ul>
+          <span class="service-link">Explore service
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </span>
+        </a>
+        <div class="service-card" style="justify-content:center;align-items:flex-start;background:linear-gradient(150deg,rgba(56,189,248,0.16),rgba(46,155,230,0.06));">
+          <h3 style="font-size:1.35rem;">Not sure where to start?</h3>
+          <p>Tell us your goals and we'll point you to the right service — or design a blend across several.</p>
+          <a href="#contact" class="btn-primary" style="margin-top:6px;">Talk to us
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
-  <section class="section section-alt" id="how">
+  <!-- PROCESS -->
+  <section class="section" id="process">
     <div class="container">
       <div class="section-header">
-        <div class="tag">Our Process</div>
-        <h2>From Idea to <span class="gradient-text">Automated Reality</span></h2>
-        <p>A clear, collaborative process that gets your automation live — fast.</p>
+        <div class="tag">How We Work</div>
+        <h2>From Idea to <span class="gradient-text">Intelligent Reality</span></h2>
+        <p>A clear, collaborative process that turns your vision into a deployed, dependable AI system.</p>
       </div>
       <div class="process-steps">
         <div class="step">
           <div class="step-number">01</div>
-          <div class="step-content">
-            <h3>Discovery</h3>
-            <p>We map your current workflows, identify bottlenecks, and pinpoint the highest-ROI automation opportunities.</p>
-          </div>
-          <div class="step-connector"></div>
+          <div class="step-content"><h3>Discover</h3><p>We map your goals, workflows and data to pinpoint the highest-impact AI opportunities.</p></div>
         </div>
         <div class="step">
           <div class="step-number">02</div>
-          <div class="step-content">
-            <h3>Blueprint</h3>
-            <p>We design the automation architecture — every trigger, action, and integration mapped before a single node is placed.</p>
-          </div>
-          <div class="step-connector"></div>
+          <div class="step-content"><h3>Design</h3><p>We architect the solution — every model, integration and guardrail planned before we build.</p></div>
         </div>
         <div class="step">
           <div class="step-number">03</div>
-          <div class="step-content">
-            <h3>Build & Test</h3>
-            <p>We build in n8n, rigorously test edge cases, and validate every path before going live.</p>
-          </div>
-          <div class="step-connector"></div>
+          <div class="step-content"><h3>Build & Train</h3><p>We develop, train and rigorously test until the system performs against real-world cases.</p></div>
         </div>
         <div class="step">
           <div class="step-number">04</div>
-          <div class="step-content">
-            <h3>Deploy & Scale</h3>
-            <p>Launch with confidence. We monitor performance and iterate as your needs evolve.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TECH STACK -->
-  <section class="section" id="stack">
-    <div class="container">
-      <div class="section-header">
-        <div class="tag">Technology</div>
-        <h2>Built on Tools <span class="gradient-text">You Can Trust</span></h2>
-        <p>We work with the world's leading automation and integration platforms.</p>
-      </div>
-      <div class="stack-grid">
-        <div class="stack-item">
-          <div class="stack-logo">
-            <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#EA4B71" fill-opacity="0.15"/><path d="M20 8C13.373 8 8 13.373 8 20s5.373 12 12 12 12-5.373 12-12S26.627 8 20 8zm0 4a4 4 0 110 8 4 4 0 010-8zm0 17c-3.314 0-6.257-1.69-8-4.25.04-2.66 5.34-4.125 8-4.125 2.646 0 7.96 1.465 8 4.125C26.257 27.31 23.314 29 20 29z" fill="#EA4B71"/></svg>
-          </div>
-          <span>n8n</span>
-        </div>
-        <div class="stack-item">
-          <div class="stack-logo">
-            <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#FF6B35" fill-opacity="0.15"/><path d="M20 8l10 6v12l-10 6L10 26V14L20 8zm0 4l-7 4.2V23.8L20 28l7-4.2V16.2L20 12z" fill="#FF6B35"/></svg>
-          </div>
-          <span>Make</span>
-        </div>
-        <div class="stack-item">
-          <div class="stack-logo">
-            <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#C9A84C" fill-opacity="0.15"/><path d="M12 14h16v2H12zm0 5h16v2H12zm0 5h10v2H12z" fill="#C9A84C"/></svg>
-          </div>
-          <span>Airtable</span>
-        </div>
-        <div class="stack-item">
-          <div class="stack-logo">
-            <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#4285F4" fill-opacity="0.15"/><path d="M20 10l8 14H12L20 10zm0 5l-4 7h8l-4-7z" fill="#4285F4"/></svg>
-          </div>
-          <span>Google APIs</span>
-        </div>
-        <div class="stack-item">
-          <div class="stack-logo">
-            <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#00C7B7" fill-opacity="0.15"/><circle cx="20" cy="20" r="8" stroke="#00C7B7" stroke-width="2"/><circle cx="20" cy="20" r="3" fill="#00C7B7"/></svg>
-          </div>
-          <span>Webhooks</span>
-        </div>
-        <div class="stack-item">
-          <div class="stack-logo">
-            <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#7C3AED" fill-opacity="0.15"/><path d="M14 14h12v3H14zm2 5h8v3h-8zm-2 5h12v3H14z" fill="#7C3AED"/></svg>
-          </div>
-          <span>OpenAI / Claude</span>
-        </div>
-        <div class="stack-item">
-          <div class="stack-logo">
-            <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#00AA44" fill-opacity="0.15"/><path d="M20 12c-4.418 0-8 2-8 8s3.582 8 8 8 8-2 8-8-3.582-8-8-8zm-1 12v-8l6 4-6 4z" fill="#00AA44"/></svg>
-          </div>
-          <span>Zapier</span>
-        </div>
-        <div class="stack-item">
-          <div class="stack-logo">
-            <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#C9A84C" fill-opacity="0.15"/><path d="M11 14h18v2H11zm0 5h18v2H11zm0 5h12v2H11z" fill="#C9A84C"/></svg>
-          </div>
-          <span>Notion</span>
+          <div class="step-content"><h3>Deploy & Scale</h3><p>We launch with confidence, monitor performance and evolve the system as you grow.</p></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- RESULTS -->
-  <section class="section section-dark" id="results">
-    <div class="container">
-      <div class="section-header light">
-        <div class="tag">Client Results</div>
-        <h2>Real Outcomes, <span class="gradient-text">Real Numbers</span></h2>
-      </div>
-      <div class="results-grid">
-        <div class="result-card">
-          <div class="result-num">73%</div>
-          <div class="result-label">Reduction in manual data entry for an e-commerce brand</div>
-          <div class="result-tag">E-Commerce</div>
+  <section class="section">
+    <div class="section-dark">
+      <div class="container" style="padding-top:88px;padding-bottom:88px;">
+        <div class="section-header light">
+          <div class="tag">Why It Matters</div>
+          <h2>Outcomes That <span class="gradient-text">Move the Needle</span></h2>
         </div>
-        <div class="result-card">
-          <div class="result-num">4.5hrs</div>
-          <div class="result-label">Saved per day by automating lead intake & CRM updates</div>
-          <div class="result-tag">SaaS Sales</div>
-        </div>
-        <div class="result-card">
-          <div class="result-num">3×</div>
-          <div class="result-label">Faster onboarding by automating client welcome sequences</div>
-          <div class="result-tag">Agency</div>
-        </div>
-        <div class="result-card">
-          <div class="result-num">$0</div>
-          <div class="result-label">In missed invoices after automating billing reminders</div>
-          <div class="result-tag">Consulting Firm</div>
+        <div class="results-grid" id="results">
+          <div class="result-card"><div class="result-num">80%</div><div class="result-label">Less time spent on repetitive manual work</div><div class="result-tag">Automation</div></div>
+          <div class="result-card"><div class="result-num">10×</div><div class="result-label">Faster creative production at lower cost</div><div class="result-tag">Creative</div></div>
+          <div class="result-card"><div class="result-num">3×</div><div class="result-label">Faster path from AI idea to deployment</div><div class="result-tag">Consulting</div></div>
+          <div class="result-card"><div class="result-num">100%</div><div class="result-label">Models tuned to your domain & data</div><div class="result-tag">Custom AI</div></div>
         </div>
       </div>
     </div>
@@ -294,52 +229,29 @@
       <div class="why-grid">
         <div class="why-content">
           <div class="tag">Why neuralMend</div>
-          <h2>We Don't Just Build Automations.<br /><span class="gradient-text">We Build Systems.</span></h2>
-          <p>Anyone can string together a few nodes. We design automation architectures that are reliable, maintainable, and built to scale with your business — not against it.</p>
+          <h2>We Don't Just Add AI.<br /><span class="gradient-text">We Engineer Advantage.</span></h2>
+          <p>Anyone can wire up an API. We design AI systems that are reliable, secure, and built to scale with your business — grounded in your real problems, not the hype.</p>
           <div class="why-points">
             <div class="why-point">
-              <div class="why-icon">
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              </div>
-              <div>
-                <strong>Deep n8n expertise</strong>
-                <p>We live and breathe n8n — self-hosted, cloud, complex expressions, custom nodes.</p>
-              </div>
+              <div class="why-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-8 8a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4L8 12.6l7.3-7.3a1 1 0 011.4 0z" clip-rule="evenodd"/></svg></div>
+              <div><strong>End-to-end expertise</strong><p>From strategy to trained models to production deployment — one accountable partner.</p></div>
             </div>
             <div class="why-point">
-              <div class="why-icon">
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              </div>
-              <div>
-                <strong>Business-first thinking</strong>
-                <p>We ask "what problem are we solving?" before touching any tooling.</p>
-              </div>
+              <div class="why-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-8 8a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4L8 12.6l7.3-7.3a1 1 0 011.4 0z" clip-rule="evenodd"/></svg></div>
+              <div><strong>Business-first thinking</strong><p>We start with "what problem are we solving?" before touching any model or tool.</p></div>
             </div>
             <div class="why-point">
-              <div class="why-icon">
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              </div>
-              <div>
-                <strong>Transparent delivery</strong>
-                <p>Full documentation, handoff, and training so you're never locked in.</p>
-              </div>
+              <div class="why-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-8 8a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4L8 12.6l7.3-7.3a1 1 0 011.4 0z" clip-rule="evenodd"/></svg></div>
+              <div><strong>Transparent delivery</strong><p>Full documentation, handoff and training so you own the outcome — never locked in.</p></div>
             </div>
           </div>
         </div>
         <div class="why-visual">
           <div class="orbit-container">
-            <div class="orbit-core">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            </div>
-            <div class="orbit orbit-1">
-              <div class="orbit-dot"></div>
-            </div>
-            <div class="orbit orbit-2">
-              <div class="orbit-dot"></div>
-            </div>
-            <div class="orbit orbit-3">
-              <div class="orbit-dot"></div>
-            </div>
+            <div class="orbit-core"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+            <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+            <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+            <div class="orbit orbit-3"><div class="orbit-dot"></div></div>
           </div>
         </div>
       </div>
@@ -347,48 +259,48 @@
   </section>
 
   <!-- CONTACT -->
-  <section class="section section-dark" id="contact">
-    <div class="container">
-      <div class="contact-wrapper">
-        <div class="contact-info">
-          <div class="tag">Get Started</div>
-          <h2>Ready to <span class="gradient-text">Automate?</span></h2>
-          <p>Tell us about your business and we'll map out exactly how automation can save you time and money.</p>
-          <div class="contact-details">
-            <div class="contact-item">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
-              <a href="mailto:madushan.neuralmend@gmail.com" style="color:inherit;text-decoration:none;">madushan.neuralmend@gmail.com</a>
-            </div>
-            <div class="contact-item">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
-              <span>Response within 24 hours</span>
+  <section class="section" id="contact">
+    <div class="section-dark">
+      <div class="container" style="padding-top:88px;padding-bottom:88px;">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="tag">Get Started</div>
+            <h2>Let's Build Something <span class="gradient-text">Intelligent.</span></h2>
+            <p>Tell us about your business and goals. We'll map out exactly how AI can create real, measurable advantage for you.</p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <span class="contact-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg></span>
+                <a href="mailto:contact.neuralmend@gmail.com">contact.neuralmend@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg></span>
+                <span>Response within 24 hours</span>
+              </div>
             </div>
           </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" placeholder="John Doe" required /></div>
+              <div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="john@company.com" required /></div>
+            </div>
+            <div class="form-group"><label for="company">Company</label><input type="text" id="company" placeholder="Your Company" /></div>
+            <div class="form-group">
+              <label for="service">Service of interest</label>
+              <input list="services-list" id="service" placeholder="Choose or type a service" />
+              <datalist id="services-list">
+                <option value="Business Process Automation"></option>
+                <option value="Creative Productions"></option>
+                <option value="AI Consultation"></option>
+                <option value="Custom Model Training"></option>
+                <option value="Custom AI Development"></option>
+              </datalist>
+            </div>
+            <div class="form-group"><label for="message">Tell us about your project</label><textarea id="message" rows="4" placeholder="Describe your goals or challenges..." required></textarea></div>
+            <button type="submit" class="btn-primary btn-full"><span>Send Message</span>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/></svg>
+            </button>
+          </form>
         </div>
-        <form class="contact-form" id="contactForm">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" placeholder="John Doe" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" placeholder="john@company.com" required />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="company">Company</label>
-            <input type="text" id="company" placeholder="Your Company" />
-          </div>
-          <div class="form-group">
-            <label for="message">What do you want to automate?</label>
-            <textarea id="message" rows="4" placeholder="Describe your current workflow pain points..." required></textarea>
-          </div>
-          <button type="submit" class="btn-primary btn-full">
-            <span>Send Message</span>
-            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/></svg>
-          </button>
-        </form>
       </div>
     </div>
   </section>
@@ -398,27 +310,27 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <a href="#" class="logo">neural<span>Mend</span></a>
-          <p>Business automation, elevated.<br />neuralMend.agency</p>
+          <a href="index.html" class="footer-logo"><img src="logo-mark.png" alt="neuralMend" /></a>
+          <p>Premium AI solutions for forward-thinking businesses. Automation, creative, consultation & custom development.</p>
         </div>
-        <div class="footer-links">
-          <div class="footer-col">
-            <h4>Services</h4>
-            <a href="#services">Workflow Automation</a>
-            <a href="#services">AI Pipelines</a>
-            <a href="#services">CRM Automation</a>
-            <a href="#services">System Integration</a>
-          </div>
-          <div class="footer-col">
-            <h4>Company</h4>
-            <a href="#how">Our Process</a>
-            <a href="#results">Case Studies</a>
-            <a href="#contact">Contact</a>
-          </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="service-automation.html">Process Automation</a>
+          <a href="service-creative.html">Creative Productions</a>
+          <a href="service-consultation.html">AI Consultation</a>
+          <a href="service-model-training.html">Model Training</a>
+          <a href="service-development.html">AI Development</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="index.html#process">Our Process</a>
+          <a href="index.html#results">Results</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="mailto:contact.neuralmend@gmail.com">contact.neuralmend@gmail.com</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 neuralMend.agency — All rights reserved.</p>
+        <p>© 2026 neuralMend — All rights reserved.</p>
         <p>Crafted with precision.</p>
       </div>
     </div>
