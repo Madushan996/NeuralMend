@@ -14,11 +14,8 @@ if (hamburger) {
   mobileMenu.innerHTML = `
     <button class="mobile-close" aria-label="Close">✕</button>
     <a href="index.html">Home</a>
-    <a class="mm-sub" href="service-automation.html">Process Automation</a>
+    <a class="mm-sub" href="service-automation.html">Automation &amp; AI Consultation</a>
     <a class="mm-sub" href="service-creative.html">Creative Productions</a>
-    <a class="mm-sub" href="service-consultation.html">AI Consultation</a>
-    <a class="mm-sub" href="service-model-training.html">Model Training</a>
-    <a class="mm-sub" href="service-development.html">AI Development</a>
     <a href="index.html#contact">Get Started</a>
   `;
   document.body.appendChild(mobileMenu);
