@@ -142,7 +142,7 @@ if (form) {
     } catch (err) {
       btn.disabled = false;
       span.textContent = original;
-      alert('Sorry, your message could not be sent. Please email us directly at neuralmend@gmail.com.');
+      alert('Sorry, your message could not be sent. Please email us directly at contact@neuralmend.agency.');
       console.error('Web3Forms error:', err);
     }
   });
